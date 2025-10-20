@@ -62,4 +62,5 @@ int main(){
     }
     cout<<" Check";
     return 0;
-} // default keyword is used in switch case if none of the any cases in sitch case is executed then a default case is always executed(if and only if none of the cases matches) 
+} // default keyword is used in switch case if none of the any cases in switch case is executed then a default case is always executed(if and only if none of the cases matches) 
+
