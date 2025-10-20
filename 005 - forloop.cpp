@@ -39,3 +39,4 @@ for(i=1;i<25;i+=5){
 } 
 cout<<i;//will give 26 as the last value assigned to i was 26
 return 0;}
+
