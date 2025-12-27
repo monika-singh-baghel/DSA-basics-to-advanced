@@ -38,3 +38,25 @@ int main() {
     cout << reverseNumber(n);
     return 0;
 }
+
+  ------ARMSTRONG NUMBER(CODE FOR 3 DIGIT )-----
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    int dup=n;
+    int sum=0;
+    while(n>0){
+       int ld=n%10;
+       int r=ld*ld*ld;
+        sum=sum+r;
+        n=n/10;
+    }
+    if(sum==dup){
+        cout<<"armstrong number";
+    }
+    else{
+        cout<<"not armstrong number";
+    }
+}
