@@ -17,7 +17,7 @@ int main() {
 }
 
 
- ---REVERSE A NUMBER------
+ -----REVERSE A NUMBER------
 #include <bits/stdc++.h>
 using namespace std;
 // Function to reverse digits of a number
