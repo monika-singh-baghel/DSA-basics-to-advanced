@@ -30,3 +30,19 @@ int main()
     print(1, n);
     return 0;
 }
+
+//----------------Print N to 1 using Recursion--------------
+#include <iostream>
+using namespace std;
+void print(int i, int n)
+{   if (i < 1) // Base condition
+        return;
+ cout << i << endl;
+    print(i - 1, n);// Recursive call
+}
+int main()
+{  int n;
+    cin >> n;
+    print(n, n);
+    return 0;
+}
