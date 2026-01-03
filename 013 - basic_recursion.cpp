@@ -47,7 +47,7 @@ int main()
     return 0;
 }
 
--------------Print 1 to N using Recursion but by using backtracking
+-------------Print 1 to N but by using backtracking
 #include <iostream>
 using namespace std;
 void printBacktrack(int i, int n)
