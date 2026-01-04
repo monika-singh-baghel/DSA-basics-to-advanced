@@ -78,3 +78,18 @@ int main()
     cout << sum(n, 0);
     return 0;
 }
+       //2.functional recurssion
+#include <iostream>
+using namespace std;
+int fun(int n)
+{ if (n == 0)// Base condition
+        return 0;
+  return n + fun(n - 1);// Recursive relation
+}
+int main()
+{   int n ;
+    cin>>n;
+    cout << fun(n);
+    return 0;
+}
+
