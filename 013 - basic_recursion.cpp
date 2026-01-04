@@ -64,5 +64,17 @@ int main()
 }        
 
 ---------------Sum of first N Natural Numbers---------------------
+        //1.parameterised recurssion
 #include <iostream>
 using namespace std;
+int sum(int i, int s)
+{   if (i < 1)// Base condition
+        return s;
+    return sum(i - 1, s + i);// Recursive call
+}
+int main()
+{  int n;
+    cin >> n;
+    cout << sum(n, 0);
+    return 0;
+}
