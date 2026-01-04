@@ -64,3 +64,5 @@ int main()
 }        
 
 ---------------Sum of first N Natural Numbers---------------------
+#include <iostream>
+using namespace std;
