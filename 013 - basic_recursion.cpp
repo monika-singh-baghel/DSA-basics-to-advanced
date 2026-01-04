@@ -110,3 +110,24 @@ int main() {
    cout << factorial(n) << endl;// Call the factorial function 
     return 0;
 }
+
+---------------------Reverse a given Array-----------------------
+        //using two pointer 
+#include <iostream>
+using namespace std;
+void reverseArr(int a[], int l, int r)
+{    if (l >= r) // Base condition
+        return;
+    swap(a[l], a[r]); // Swap elements
+    reverseArr(a, l + 1, r - 1);// Recursive call
+}
+int main()
+{   int a[] = {1, 3, 2, 5, 4};
+    int n = 5;
+    reverseArr(a, 0, n - 1);
+    // Print reversed array
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+    return 0;
+}
+      //using one pointer
