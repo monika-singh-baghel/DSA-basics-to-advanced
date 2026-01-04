@@ -130,4 +130,22 @@ int main()
         cout << a[i] << " ";
     return 0;
 }
+
       //using one pointer
+#include <iostream>
+using namespace std;
+void reverseArr(int a[], int i, int n)
+{   if (i >= n / 2)// Base condition
+        return;
+    swap(a[i], a[n - i - 1]);// Swap using single pointer logic
+    reverseArr(a, i + 1, n);// Recursive call
+}
+int main()
+{   int a[] = {1, 2, 3, 4, 5};
+    int n = 5;
+    reverseArr(a, 0, n);
+    // Print reversed array
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+    return 0;
+}
