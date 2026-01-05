@@ -169,3 +169,69 @@ int main()
         cout << "Not Palindrome";
     return 0;
 } 
+
+--------------------Print Fibonacci Series up to Nth term---------------------
+//1.BRUTE FORCE-------------
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n = 5;
+    if (n == 0) 
+        {cout << 0; }
+    else if (n == 1) 
+        {cout << 0 << " " << 1 << "\n";}
+    else {
+        int fib[n + 1];    // Array to store Fibonacci numbers up to index n
+        fib[0] = 0;
+        fib[1] = 1;
+        for (int i = 2; i <= n; i++) 
+            {fib[i] = fib[i - 1] + fib[i - 2]; }
+        cout << "The Fibonacci Series up to " << n << "th term:" << endl;
+        for (int i = 0; i <= n; i++) {
+            cout << fib[i] << " ";}}
+    return 0;
+}
+//2.BETTER APPROACH-----------
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n = 5;
+    if (n == 0) {
+        cout << "The Fibonacci Series up to " << n << "th term:" << endl;
+        cout << 0;
+    }
+    else {
+        int secondLast = 0; // (i-2)th term
+        int last = 1;       // (i-1)th term
+        cout << "The Fibonacci Series up to " << n << "th term:" << endl;
+        cout << secondLast << " " << last << " ";
+        int cur; // ith term
+        for (int i = 2; i <= n; i++) {
+            cur = last + secondLast;   // ith Fibonacci number
+            secondLast = last;         // move window forward
+            last = cur;
+            cout << cur << " ";}}
+    return 0;
+}
+//OPTIMAL APPROACH----------
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int n = 5;
+    if (n == 0) {
+        cout << "The Fibonacci Series up to " << n << "th term:" << endl;
+        cout << 0;
+    }
+    else {
+        int secondLast = 0; // (i-2)th term
+        int last = 1;       // (i-1)th term
+        cout << "The Fibonacci Series up to " << n << "th term:" << endl;
+        cout << secondLast << " " << last << " ";
+        int cur; // ith term
+        for (int i = 2; i <= n; i++) {
+            cur = last + secondLast;   // ith Fibonacci number
+            secondLast = last;         // move window forward
+            last = cur;
+            cout << cur << " ";}}
+    return 0;
+}
