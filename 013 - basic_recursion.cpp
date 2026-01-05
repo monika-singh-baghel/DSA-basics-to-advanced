@@ -151,7 +151,7 @@ int main()
 }
 
 ------------------Check if the given String is Palindrome or not--------------------
-       #include <iostream>
+#include <iostream>
 using namespace std;
 bool isPalindrome(string &s, int i)
 {   if (i >= s.length() / 2)  // Base condition
