@@ -149,3 +149,23 @@ int main()
         cout << a[i] << " ";
     return 0;
 }
+
+------------------Check if the given String is Palindrome or not--------------------
+       #include <iostream>
+using namespace std;
+bool isPalindrome(string &s, int i)
+{   if (i >= s.length() / 2)  // Base condition
+        return true;
+    if (s[i] != s[s.length() - i - 1])// If characters don't match
+        return false;
+    return isPalindrome(s, i + 1);// Recursive call
+}
+int main()
+{   string s;
+    cin >> s;
+    if (isPalindrome(s, 0))
+        cout << "Palindrome";
+    else
+        cout << "Not Palindrome";
+    return 0;
+} 
