@@ -27,7 +27,6 @@ int main() {
     }
     // Precompute
     int hash[13] = {0};   // assuming max element is 12
-
     for (int i = 0; i < n; i++) {
         hash[arr[i]]++;
     }
